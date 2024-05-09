@@ -1,5 +1,9 @@
 import React from 'react'
 import  hostpital from "../../assets/svg/hostipital.svg"
+import  doctor from "../../assets/svg/doctor.svg"
+import  user from "../../assets/svg/user.svg"
+import  admin from "../../assets/svg/admin.svg"
+import wall from "../../Images/wall.jpg"
 const Home = () => {
   return (
     <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
@@ -8,6 +12,7 @@ const Home = () => {
         <header className="mb-4 flex items-center justify-between py-4 md:py-8">
           {/* <!-- logo - start --> */}
 <img src={hostpital} alt=""  width={70}/>
+<h2 className='font-bold'>Hospital Management System</h2>
 
           {/* <a
             href="/"
@@ -31,19 +36,19 @@ const Home = () => {
       <!-- nav - start --> */}
           <nav className="hidden gap-12 lg:flex">
             <a href="#" className="text-lg font-semibold text-indigo-500">
-              Home
+              Admin
             </a>
             <a
               href="#"
               className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
             >
-              Features
+              Doctor
             </a>
             <a
               href="#"
               className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
             >
-              Pricing
+              User
             </a>
             <a
               href="#"
@@ -51,15 +56,21 @@ const Home = () => {
             >
               About
             </a>
+            <a
+              href="#"
+              className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            >
+              Contact
+            </a>
           </nav>
           {/* <!-- nav - end --> */}
 
           {/* <!-- buttons - start --> */}
           <a
             href="#"
-            className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+            className="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-bold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
           >
-            Contact Sales
+            More
           </a>
 
           <button
@@ -86,10 +97,11 @@ const Home = () => {
         <section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
           {/* <!-- image - start --> */}
           <img
-            src="https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500"
+            src={wall}
             loading="lazy"
-            alt="Photo by Fakurian Design"
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            alt="wallpaper"
+            // className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-25"
           />
           {/* <!-- image - end --> */}
 
@@ -128,35 +140,45 @@ const Home = () => {
       {/* ------------------------------------------------------------- cards ----------------------------------- */}
 <div className='flex justify-around mt-6'>
       <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
+  <figure><img src={admin} alt=""  width={226.75} height={384}/></figure>
   <div className="card-body">
     <div className="w-full flex justify-center">
     <h2 className="card-title ">Admin</h2></div>
     {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
-    <div className="card-actions ">
-      <button className="btn btn-primary">Buy Now</button>
+    
+    <div className="card-actions">
+      {/* <button className="btn btn-primary w-full font-black">View</button> */}
+      <button className="btn btn-primary w-full font-black hover:text-black hover:font-bold">View</button>
+
     </div>
   </div>
 </div>
       <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
+  <figure><img src={doctor} alt=""  width={226.75} height={384}/></figure>
   <div className="card-body">
   <div className="w-full flex justify-center">
     <h2 className="card-title ">Doctor</h2></div>
     {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
     <div className="card-actions ">
-      <button className="btn btn-primary">Buy Now</button>
+      {/* <button className="btn btn-primary w-full font-black ">View</button> */}
+      <button className="btn btn-primary w-full font-black hover:text-black hover:font-bold">View</button>
+
     </div>
   </div>
 </div>
       <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
+  <figure><img src={user} alt=""  width={226.75} height={384}/></figure>
   <div className="card-body">
   <div className="w-full flex justify-center">
     <h2 className="card-title">Patient</h2></div>
     {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
     <div className="card-actions ">
-      <button className="btn btn-primary w-f">Buy Now</button>
+      {/* <button className="btn btn-primary w-full font-black">View</button> */}
+      <button className="btn btn-primary w-full font-black hover:text-black hover:font-bold">View</button>
+
     </div>
   </div>
 </div>
