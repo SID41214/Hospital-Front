@@ -9,7 +9,8 @@ const Home = () => {
     <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
       {/* <h1 className="text-red-500">sdakhkjasdjghf</h1> */}
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <header className="mb-4 flex items-center justify-between py-4 md:py-8">
+        <header className="mb-4 flex items-center justify-between py-4 md:py-1">
+        {/* <header className="mb-4 flex items-center justify-between py-4 md:py-1 fixed top-0 left-0 right-0 z-50 bg-white opacity-80 "> */}
           {/* <!-- logo - start --> */}
 <img src={hostpital} alt=""  width={70}/>
 <h2 className='font-bold'>Hospital Management System</h2>
@@ -183,6 +184,13 @@ const Home = () => {
   </div>
 </div>
 </div>
+
+
+<footer className="footer footer-center p-4 bg-base-300 text-base-content fixed bottom-0 left-0 w-full z-50">
+  <aside>
+    <p>Copyright © 2024 - Developed By Aboobacker Sidheeque K</p>
+  </aside>
+</footer>
     </div>
   )
 }
