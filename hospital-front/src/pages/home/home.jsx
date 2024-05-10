@@ -13,7 +13,7 @@ const Home = () => {
         {/* <header className="mb-4 flex items-center justify-between py-4 md:py-1 fixed top-0 left-0 right-0 z-50 bg-white opacity-80 "> */}
           {/* <!-- logo - start --> */}
 <img src={hostpital} alt=""  width={70}/>
-<h2 className='font-bold'>Hospital Management System</h2>
+{/* <h2 className='font-bold'>Hospital Management System</h2> */}
 
           {/* <a
             href="/"
