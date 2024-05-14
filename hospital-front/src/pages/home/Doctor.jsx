@@ -2,7 +2,28 @@ import React from 'react'
 
 const Doctor = () => {
   return (
-    <div>Doctor</div>
+    <div>
+      <div className="container">
+
+
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
   )
 }
 
