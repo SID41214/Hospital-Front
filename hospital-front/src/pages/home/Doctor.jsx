@@ -12,10 +12,7 @@ const Doctor = () => {
 
 
 
-      <div className="subdiv">
-        
-      </div>
-
+    
 
 
 
