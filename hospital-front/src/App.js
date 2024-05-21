@@ -6,7 +6,8 @@ import Admin from './pages/home/admin';
 function App() {
   return (
     <div>
-    <Admin/>
+    {/* <Admin/> */}
+    <Home/>
     </div>
   );
 }
